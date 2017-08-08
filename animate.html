@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>index</title>
+    <style>
+        .main{
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .img{
+            height: 720;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript" src='jquery.min.js'></script>
+</head>
+<body>
+    <div class="main">
+        <div class="img">
+             <img src="a.jpg" alt="arthur">
+        </div>
+        <br>
+        <button>Left</button>
+        <button>Right</button>
+        <button>Up</button>
+        <button>Down</button>
+    </div>
+</body>
+
+<script>
+$('button').eq(0).click(function() {
+    $('img').animate({
+        'margin-left':'-1280px',
+        'opacity':'0',
+    }, 1000)
+
+});
+
+$('button').eq(1).click(function() {
+    $('img').animate({
+        'margin-left':'1280px',
+        'opacity':'0',
+    }, 1000)
+});
+
+$('button').eq(2).click(function() {
+    $('img').animate({
+        'margin-top':'-720px',
+        'opacity':'0',
+    }, 1000)
+
+});
+
+$('button').eq(3).click(function() {
+    $('img').animate({
+        'margin-top':'720px',
+        'opacity':'0',
+    },1000,function(){
+        $('body').css({'background':'#ccc'});
+});
+});
+
+</script>
+</html>

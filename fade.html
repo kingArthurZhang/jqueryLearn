@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>index</title>
+    <style>
+        p{
+            opacity: 1;
+        }
+    </style>
+    <script type="text/javascript" src='jquery.min.js'></script>
+</head>
+<body>
+    <h1 class="fadeinout">Linux</h1>
+    <p>Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!</p>
+
+    <h1 class="fadeto">Linux</h1>
+    <p>Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!Linux is very much!</p>
+</body>
+
+<script>
+
+    $('h1.fadeinout').click(function(){
+        d=$(this).next().css('display');
+        if (d=='block') {
+            $(this).next().fadeOut(1000);
+        }else{
+            $(this).next().fadeIn(1000);
+        }
+
+    });
+
+    $('h1.fadeto').mouseenter(function(){
+        d=$(this).next().css('opacity');
+        if (d=='1') {
+            $(this).next().fadeTo(1000,0.5);
+        }else{
+            $(this).next().fadeTo(1000,1);
+        }
+
+    });
+</script>
+</html>
